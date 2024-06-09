@@ -33,9 +33,9 @@ async def start_command(message:Message):
     telegram_id = message.from_user.id
     try:
         db.add_user(full_name=full_name,telegram_id=telegram_id)
-        await message.answer(text="Assalomu alaykum, bizning Navoi shahar kasb hunar maktabining ruyxatdan utkazuvchi botiga hush kelibsiz\nbot nma qiladi /help\nRuyxatdan utish /regist\ndasturchi haqida va kolij haqida mlunot /abaut")
+        await message.answer(text="Assalomu alaykum, bizning Navoi shahar Sifat IT akademiyasida ruyxatdan utkazuvchi botiga hush kelibsiz\nbot nma qiladi /help\nRuyxatdan utish /regist\ndasturchi haqida va Sifat IT haqida malumot /abaut")
     except:
-        await message.answer(text="Assalomu alaykum, bizning Navoi shahar kasb hunar maktabining ruyxatdan utkazuvchi botiga hush kelibsiz\nbot nma qiladi /help\nRuyxatdan utish /regist\ndasturchi haqida va kolij haqida mlunot /abaut")
+        await message.answer(text="Assalomu alaykum, bizning Sifat IT akademiyasida ruyxatdan utkazuvchi botiga hush kelibsiz\nbot nma qiladi /help\nRuyxatdan utish /regist\ndasturchi haqida va Sifat IT haqida malumot /abaut")
 
 
 @dp.message(IsCheckSubChannels())
@@ -52,12 +52,12 @@ async def kanalga_obuna(message:Message):
 
 @dp.message(Command("help"))
 async def is_admin(message:Message):
-    await message.answer(text="Bu bot orqali siz Navoi shahar kasb hunara maktabiga ollayn tarzda ruyxatdan utishingiz mumkin va siz kursatmalarni tug'ri bersangiz")
+    await message.answer(text="Bu bot orqali siz Navoi shahar Sifat o'quv markaziga onlayn tarzda ruyxatdan utishingiz mumkin va siz kursatmalarni tug'ri bersangiz")
 
 
 @dp.message(Command("abaut"))
 async def is_admin(message:Message):
-    await message.answer(text="Dasturchi Rustamqulov Boborahim @Alisherov1ch_002 bot haqida savollar bo'lsa utib qoldirishilar mumkin\nNavoi shahar kasb hunar maktabi 2-yillik uquv tizimi bulib siz 9- sinfni bitirganlik haqidagi shahodotnoma bilan qabul qilinasiz")
+    await message.answer(text="men sulhiddinova gulhayo 1yildan buyon sifat IT akademiyasida o'qib kelmoqdaman")
 
 #Admin panel uchun
 @dp.message(Command("admin"))
